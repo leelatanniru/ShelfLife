@@ -1,0 +1,38 @@
+# this is an auto generated file. This will be overwritten
+query GetProduct($id: ID!) {
+  getProduct(id: $id) {
+    name
+    quantity
+    originalPrice
+    sellingPrice
+    discount
+    seller
+    useBefore
+    category
+    id
+    createdAt
+    updatedAt
+  }
+}
+query ListProducts(
+  $filter: ModelProductFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listProducts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      name
+      quantity
+      originalPrice
+      sellingPrice
+      discount
+      seller
+      useBefore
+      category
+      id
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

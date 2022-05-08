@@ -1,0 +1,23 @@
+<mat-card class="example-card">
+  <mat-card-title-group>
+    <img mat-card-lg-image src="assets/{{imgId}}.jpg" >
+    <mat-card-title>{{product.name}}</mat-card-title>
+    <mat-card-subtitle>sold by: {{product.seller}}</mat-card-subtitle>
+  </mat-card-title-group>
+  <mat-card-content>
+    <span><b>Price:  </b> &#8377;<del>{{product.originalPrice}}</del> <span class="current-price">&#8377;50</span></span>
+    <br/>
+    <span><b>Discount:  </b>{{product.discount}}</span>
+    <br/>
+    <span><b>Quantity:  </b> {{product.quantity}}</span>
+    <br/>
+    <span><b>Use before:  </b>{{product.useBefore}}</span>
+
+  </mat-card-content>
+  <mat-card-actions align="end" *ngIf="!isCart">
+    <button mat-raised-button color="accent" *ngIf="!isSeller" (click)="add(product)">Add</button>
+    <button mat-raised-button color="accent" *ngIf="isSeller" >Update</button>
+
+  </mat-card-actions>
+</mat-card>
+<hr/>

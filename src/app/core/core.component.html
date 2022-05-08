@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row *ngIf="!isSeller">
+    <a mat-button  routerLink="/core/pulses">Pulses</a>
+    <a mat-button  routerLink="/core/snacks">Snacks</a>
+    <a mat-button  routerLink="/core/beauty">Beauty Products</a>
+    <a mat-button  routerLink="/core/household">Household and Personal Care Products</a>
+    <a mat-button  routerLink="/core/rice">Rice/Flour</a>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" routerLink="/core/cart">
+      <mat-icon>shopping_cart</mat-icon>({{itemsLength$ | async}})
+    </button>
+</mat-toolbar-row>
+
+<mat-toolbar-row *ngIf="isSeller">
+  <a mat-button  routerLink="/core/myproducts">My Products</a>
+  <a mat-button  routerLink="/core/addproduct">Add product</a>
+</mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

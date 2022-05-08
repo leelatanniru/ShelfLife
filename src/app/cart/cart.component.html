@@ -1,0 +1,5 @@
+<div *ngIf="cartItems.length > 0" class="subtotal"><h2>Subtotal ({{cartItems.length}} item(s)): ₹{{subtotal}}</h2></div>
+<app-product-list [products]="cartItems" [isCart]="true"></app-product-list>
+<div align="center" *ngIf="cartItems.length > 0">
+  <button mat-raised-button color="accent" routerLink="/core/thankyou">Checkout</button>
+</div>

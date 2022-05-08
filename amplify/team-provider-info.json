@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-shelflife-dev-181411-authRole",
+      "UnauthRoleArn": "arn:aws:iam::971875371119:role/amplify-shelflife-dev-181411-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::971875371119:role/amplify-shelflife-dev-181411-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-shelflife-dev-181411-deployment",
+      "UnauthRoleName": "amplify-shelflife-dev-181411-unauthRole",
+      "StackName": "amplify-shelflife-dev-181411",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:971875371119:stack/amplify-shelflife-dev-181411/6745bc90-ce03-11ec-b4e6-0a32ed31ad22",
+      "AmplifyAppId": "d3s6iyhupu7i09"
+    },
+    "categories": {
+      "auth": {
+        "shelflife96ddf463": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3s6iyhupu7i09",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

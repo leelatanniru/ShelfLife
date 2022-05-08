@@ -1,0 +1,9 @@
+<div class="product-list">
+  <div *ngFor="let product of products">
+    <app-product-card [product]="product" [isCart]="isCart" [isSeller]="isSeller"> </app-product-card>
+  </div>
+  <ng-container *ngIf="products.length === 0">
+    <div class="align-center">
+      No Results
+    </div></ng-container>
+</div>

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "shelflife",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\leela\\OneDrive\\Documents\\ShelfLife\\shelf-life-app\\amplify\\backend\\api\\shelflife\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

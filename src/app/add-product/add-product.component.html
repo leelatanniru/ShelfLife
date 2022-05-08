@@ -1,0 +1,51 @@
+<mat-card class="new-product">
+  <mat-card-header>
+    <mat-card-title>Add a new Product</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+  <form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)" class="form-body">
+      <mat-form-field>
+        <mat-label>Name: </mat-label>
+        <input matInput formControlName="name" >
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Quantity: </mat-label>
+        <input matInput formControlName="quantity"/>
+      </mat-form-field>
+
+      <mat-form-field class="small">
+        <mat-label>Original Price: </mat-label>
+        <input matInput formControlName="originalPrice">
+      </mat-form-field>
+
+      <mat-form-field class="small">
+        <mat-label>Selling Price: </mat-label>
+        <input matInput formControlName="sellingPrice">
+      </mat-form-field>
+
+      <mat-form-field class="small">
+        <mat-label>Seller: </mat-label>
+        <input matInput formControlName="seller">
+      </mat-form-field>
+
+      <mat-form-field class="small">
+        <mat-label>Use Before: </mat-label>
+        <input matInput formControlName="useBefore" placeholder="Enter unique id of the Govt Official">
+      </mat-form-field>
+
+      <mat-form-field class="small">
+        <mat-label>Discount: </mat-label>
+        <input matInput formControlName="discount" placeholder="Enter unique id of the Govt Official">
+      </mat-form-field>
+
+      <mat-form-field class="small">
+        <mat-label>Category: </mat-label>
+        <input matInput formControlName="category" placeholder="Enter unique id of the Govt Official">
+      </mat-form-field>
+
+
+    <button mat-raised-button type="submit" color="accent" class="button">Submit</button>
+  </form>
+</mat-card-content>
+</mat-card>

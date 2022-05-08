@@ -1,0 +1,20 @@
+:host {
+  .form-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .new-product {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 24px;
+  }
+
+  .mat-card-header {
+    justify-content: center;
+  }
+
+  .button {
+    align-self: center;
+    width: 25%;
+  }
+}
