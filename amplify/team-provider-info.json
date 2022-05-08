@@ -20,6 +20,16 @@
           "appId": "d3s6iyhupu7i09",
           "type": "manual"
         }
+      },
+      "function": {
+        "shelflifelayer1": {
+          "deploymentBucketName": "amplify-shelflife-dev-181411-deployment",
+          "s3Key": "amplify-builds/shelflifelayer1-LambdaLayerVersion5b94b1d2-build.zip"
+        },
+        "myfunction": {
+          "deploymentBucketName": "amplify-shelflife-dev-181411-deployment",
+          "s3Key": "amplify-builds/myfunction-4b394537774f45345439-build.zip"
+        }
       }
     }
   }
